@@ -1,0 +1,8 @@
+{
+  "name": "EvilCheck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "c551d926"
+}
