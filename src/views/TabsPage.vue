@@ -6,7 +6,7 @@
 
         <ion-tab-button tab="tab1" @click="startScan">
           <ion-icon aria-hidden="true" :icon="barcodeOutline" />
-          <ion-label>Scan</ion-label>
+          <ion-label>{{ $t('Scan') }}</ion-label>
         </ion-tab-button>
 
       </ion-tab-bar>
@@ -50,7 +50,7 @@ const startScan = async () => {
       myBody.classList.remove('scanner-active');
     }
   } else {
-    alert('No permission to use the camera');
+    alert(this.$t('No permission to use the camera'));
   }
 
 };
