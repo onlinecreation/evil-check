@@ -49,10 +49,7 @@ const startScan = async () => {
     if (myBody) {
       myBody.classList.remove('scanner-active');
     }
-  } else {
-    alert(this.$t('No permission to use the camera'));
   }
-
 };
 
 </script>
