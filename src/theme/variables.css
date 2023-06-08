@@ -234,3 +234,50 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
+
+/* Barcode fix */
+body.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+  --ion-item-background: transparent;
+  --ion-text-color: transparent;
+  --ion-item-border-color: transparent;
+  --ion-item-color: transparent;
+  --ion-color-primary-shade: transparent;
+  --ion-color-primary-tint: transparent;
+  --ion-color-primary: transparent;
+}
+
+body.scanner-active #background-content,
+body.scanner-active #background-content *,
+body.scanner-active ion-content *,
+body.scanner-active ion-page *,
+body.scanner-active ion-content,
+body.scanner-active ion-page,
+body.scanner-active ion-tabs,
+body.scanner-active ion-tab-bar,
+body.scanner-active ion-tab-button,
+body.scanner-active ion-toolbar,
+body.scanner-active ion-title,
+body.scanner-active ion-header,
+body.scanner-active ion-footer,
+body.scanner-active ion-label,
+body.scanner-active ion-router-outlet,
+body.scanner-active ion-router-link
+{
+  background: transparent !important;
+  color: transparent !important;
+  border: none;
+}
+
+#cancel-scan {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  display: none;
+  z-index: 999999;
+  opacity: 1 !important;
+}
+.scanner-active #cancel-scan {
+  display: block;
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EvilCheck</string>
+    <string name="title_activity_main">EvilCheck</string>
+    <string name="package_name">fr.onlinecreation.evilcheck</string>
+    <string name="custom_url_scheme">fr.onlinecreation.evilcheck</string>
+</resources>
