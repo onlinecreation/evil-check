@@ -69,6 +69,9 @@ const messages: any = {
     'Barcode': 'Barcode',
     'Unknown ingredients': 'Unknown ingredients',
     'No palm oil': 'No palm oil',
+    'Scan a barcode': 'Scan a barcode',
+    'to check how<br>EVIL<br>is your food !': 'to check how<br><span style="font-size: 2em">EVIL</span><br>is your food !',
+    'This application was developed by OnlineCreation': 'This application was developed by OnlineCreation',
   },
   'fr': {
     'Search': 'Rechercher',
@@ -113,6 +116,9 @@ const messages: any = {
     'Barcode': 'Code-barres',
     'Unknown ingredients': 'Ingrédients inconnus',
     'No palm oil': 'Pas d\'huile de palme',
+    'Scan a barcode': 'Scannez un code-barres',
+    'to check how<br>EVIL<br>is your food !': 'pour voir à quel point<br><span style="font-size: 2em">le MAL</span><br>est dans votre assiette !',
+    'This application was developed by OnlineCreation': 'Cette application a été développée par OnlineCreation',
   },
   'es': {
     'Search': 'Buscar',
@@ -157,6 +163,9 @@ const messages: any = {
     'Barcode': 'Código de barras',
     'Unknown ingredients': 'Ingredientes desconocidos',
     'No palm oil': 'Sin aceite de palma',
+    'Scan a barcode': 'Escanear un código de barras',
+    'to check how<br>EVIL<br>is your food !': 'para ver <br><span style="font-size: 2em">lo MALO</span><br>que es tu comida !',
+    'This application was developed by OnlineCreation': 'Esta aplicación fue desarrollada por OnlineCreation',
   },
   'de': {
     'Search': 'Suche',
@@ -201,6 +210,9 @@ const messages: any = {
     'Barcode': 'Barcode',
     'Unknown ingredients': 'Unbekannte Zutaten',
     'No palm oil': 'Kein Palmöl',
+    'Scan a barcode': 'Scannen Sie einen Barcode',
+    'to check how<br>EVIL<br>is your food !': 'um zu sehen, wie<br><span style="font-size: 2em">BÖSE</span><br>ist dein Essen !',
+    'This application was developed by OnlineCreation': 'Diese Anwendung wurde von OnlineCreation entwickelt',
   },
   'nl': {
     'Search': 'Zoeken',
@@ -245,6 +257,9 @@ const messages: any = {
     'Barcode': 'Barcode',
     'Unknown ingredients': 'Onbekende ingrediënten',
     'No palm oil': 'Geen palmolie',
+    'Scan a barcode': 'Scan een barcode',
+    'to check how<br>EVIL<br>is your food !': 'om te controleren hoe<br><span style="font-size: 2em">BOOS</span><br>is je eten !',
+    'This application was developed by OnlineCreation': 'Deze applicatie is ontwikkeld door OnlineCreation',
   },
   'it': {
     'Search': 'Ricerca',
@@ -289,6 +304,9 @@ const messages: any = {
     'Barcode': 'Codice a barre',
     'Unknown ingredients': 'Ingredienti sconosciuti',
     'No palm oil': 'Nessun olio di palma',
+    'Scan a barcode': 'Scansiona un codice a barre',
+    'to check how<br>EVIL<br>is your food !': 'per controllare quanto<br><span style="font-size: 2em">DIABOLICO</span><br>è il tuo cibo !',
+    'This application was developed by OnlineCreation': 'Questa applicazione è stata sviluppata da OnlineCreation',
   }
 };
 

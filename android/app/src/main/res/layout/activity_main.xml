@@ -10,27 +10,12 @@
     tools:context=".MainActivity">
   
     <!--on below line we are adding an image view-->
-    <ImageView
 
-        android:id="@+id/idIVLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        android:contentDescription="EvilCheck"
-        android:scaleType="center"
-        android:src="@drawable/splashcenter"
-        tools:src="@drawable/splashcenter" />
-  
     <!--on below line we are creating progress bar-->
     <ProgressBar
         android:id="@+id/idPBLoading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idIVLogo"
         android:layout_centerInParent="true"
         android:indeterminateTint="#FFFFFF" />
   

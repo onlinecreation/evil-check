@@ -263,12 +263,15 @@ body.scanner-active ion-header,
 body.scanner-active ion-footer,
 body.scanner-active ion-label,
 body.scanner-active ion-router-outlet,
-body.scanner-active ion-router-link
+body.scanner-active ion-router-link,
+body.scanner-active form ion-button,
+body.scanner-active img
 {
   background: transparent !important;
   color: transparent !important;
   border: none;
-  box-shadow: none;
+  box-shadow: none !important;
+  opacity: 0 !important;
 }
 
 #cancel-scan {

@@ -35,10 +35,28 @@
           </ion-col>
         </ion-row>
       </ion-grid>
+      <div v-if="!loading && !currentItem && productTitle === $t('Search for a product')" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; font-family: 'RubikGlitch';">
+        <!-- home screen with logo and instructions -->
+        <div style="text-align: center; padding: 1rem;">
+          <img src="@/assets/logo.png" style="max-width: 100px;" />
+          <p>
+            <span style="font-size: 1.5rem;">{{ $t('Scan a barcode') }}</span>
+            <br>
+            <span v-html="$t('to check how<br>EVIL<br>is your food !')"></span>
+          </p>
+        </div>
+      </div>
+      <div v-else-if="!loading && !currentItem && productTitle" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; font-family: 'RubikGlitch';">
+        <!-- no product found -->
+        <div style="text-align: center; font-size: 1.5rem; padding: 1rem;">
+          <img src="@/assets/death.png" style="max-width: 100px;" />
+          <p>{{ productTitle }}</p>
+        </div>
+      </div>
       <ion-grid v-if="!loading && currentItem && currentItem.product_name && currentItem.product_name !== ''">
         <ion-row>
-          <ion-col v-if="unknownIngredients|| hasAdditives || containsPalmOil || nutriscoreUnknown || ecoscoreUnknown || nutriscoreDE || ecoscoreDE || ingredientsOrigin === $t('Unknown')" style="text-align: center;">
-            <img src="@/assets/1F47F.svg" style="max-width: 100px;" />
+          <ion-col v-if="unknownIngredients|| hasAdditives || containsPalmOil || nutriscoreUnknown || ecoscoreUnknown || nutriscoreDE || ecoscoreDE" style="text-align: center;">
+            <img src="@/assets/death.png" style="max-width: 100px;" />
               <ion-note v-if="unknownIngredients" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Unknown ingredients') }}</ion-note>
               <ion-note v-if="notVegetarian || notVegan" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Animal exploitation') }}</ion-note>
               <ion-note v-if="hasAdditives" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Additives') }} </ion-note>
@@ -47,10 +65,10 @@
               <ion-note v-else-if="nutriscoreDE" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon>{{ $t('Bad Nutriscore') }}</ion-note>
               <ion-note v-if="ecoscoreUnknown" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Unknown Ecoscore') }}</ion-note>
               <ion-note v-else-if="ecoscoreDE" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Bad Ecoscore') }}</ion-note>
-              <ion-note v-if="ingredientsOrigin === $t('Unknown')" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Unknown ingredients origin') }}</ion-note>
+              <!-- Maybe some day… <ion-note v-if="ingredientsOrigin === $t('Unknown')" color="danger" style="display: block;"><ion-icon :icon="closeOutline"></ion-icon> {{ $t('Unknown ingredients origin') }}</ion-note> -->
           </ion-col>
           <ion-col v-if="isOrganic || vegan || vegetarian || fairTrade || nutriscoreAB || ecoscoreAB || containsPalmOil === false" style="text-align: center;">
-            <img src="@/assets/1F607.svg" style="max-width: 100px;" />
+            <img src="@/assets/angel.png" style="max-width: 100px;" />
             <ion-note v-if="isOrganic" color="success" style="display: block;"><ion-icon :icon="checkmarkOutline"></ion-icon> {{ $t('Organic') }}</ion-note>
             <ion-note v-if="vegan || vegetarian" color="success" style="display: block;"><ion-icon :icon="checkmarkOutline"></ion-icon> {{ vegan ? $t('Vegan') : $t('Vegetarian') }}</ion-note>
             <ion-note v-if="fairTrade" color="success" style="display: block;"><ion-icon :icon="checkmarkOutline"></ion-icon> {{ $t('Fair trade') }}</ion-note>
@@ -59,7 +77,7 @@
             <ion-note v-if="containsPalmOil === false" color="success" style="display: block;"><ion-icon :icon="checkmarkOutline"></ion-icon> {{ $t('No palm oil') }}</ion-note>
           </ion-col>
         </ion-row>
-        <ion-row>
+        <ion-row style="margin-top: 1em;">
           <ion-col style="text-align: center;">
             <img v-if="currentItem.nutriscore_grade && currentItem.nutriscore_grade.toLowerCase() === 'a'" src="@/assets/nutriscore-a.svg" style="max-width: 30vw;" />
             <img v-else-if="currentItem.nutriscore_grade && currentItem.nutriscore_grade.toLowerCase() === 'b'" src="@/assets/nutriscore-b.svg" style="max-width: 30vw;" />
@@ -125,6 +143,11 @@
             <p>{{ $t('If you find an error, please contribute to Open Food Facts, it will help thousands of consumers.') }}</p>
             <p>{{ $t('Data source:') }} {{ currentItem.data_sources }}</p>
             <p><strong>{{ $t('This list of allergens may not be exhaustive. Please double check on the product package if you have known allergies.') }}</strong></p>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-note class="footer">
+            <p><a href="https://onlinecreation.pro" target="_blank">{{ $t('This application was developed by OnlineCreation') }}</a></p>
           </ion-note>
         </ion-item>
       </ion-list>

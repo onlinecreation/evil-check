@@ -23,3 +23,15 @@ const cancelScan = async () => {
   BarcodeScanner.stopScan();
 };
 </script>
+<style>
+@font-face {
+  font-family: 'RubikGlitch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(@/assets/RubikGlitch-Regular.ttf) format('truetype');
+  src: url(@/assets/RubikGlitch-Regular.svg) format('svg');
+  src: url(@/assets/RubikGlitch-Regular.woff) format('woff');
+  src: url(@/assets/RubikGlitch-Regular.woff2) format('woff2');
+}
+</style>
