@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/raphael/Documents (local)/Git/evil-check/ios/App/App/InfoPlist.strings">
-   </FileRef>
-   <FileRef
-      location = "group:App.xcodeproj">
+      location = "group:EvilCheck.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

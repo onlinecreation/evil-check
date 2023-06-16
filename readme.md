@@ -24,7 +24,7 @@ npm install
 ```bash
 ionic build
 ionic capacitor copy android
-ionic capacitor update
+ionic capacitor update android
 ionic capacitor open android
 ```
 
@@ -35,7 +35,7 @@ ionic capacitor open android
 ```bash
 ionic build
 ionic capacitor copy ios
-ionic capacitor update
+ionic capacitor update ios
 ionic capacitor open ios
 ```
 
