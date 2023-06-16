@@ -12,6 +12,7 @@ A barcode scanner and a client for the [OpenFoodFacts.org](https://openfoodfacts
 - [Ionic](https://ionicframework.com/docs/intro/cli)
 - [Android Studio](https://developer.android.com/studio)
 - [Xcode](https://developer.apple.com/xcode/) with commande-line tools
+- [CocoaPods](https://cocoapods.org/)
 
 ### Installing
 

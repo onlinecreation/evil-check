@@ -277,8 +277,7 @@
 				6441E8B82A325B04007E3C86 /* nl */,
 			);
 			name = InfoPlist.strings;
-			path = "/Users/raphael/Documents (local)/Git/evil-check/ios/App/App";
-			sourceTree = "<absolute>";
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
